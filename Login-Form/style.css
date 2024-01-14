@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins,sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper{
+    width: 450px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, 0.32);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    color: #333;
+    padding : 30px 60px;
+}
+
+.wrapper h1 {
+    font-size: 33px;
+    text-align: center;
+    margin:8px;
+}
+
+.inputs form .user-input{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.user-input input{
+    height: 100%;
+    background: transparent;
+    border : none;
+    outline: none;
+    border:2px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+}
+
+.user-input input::placeholder{
+     color: #333;
+     font-size: 15px;
+}
+
+.user-input i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+
+}
+
+.remember-forgot label input{
+    accent-color: #333;
+    margin-right: 8px;
+}
+
+.remember-forgot a{
+    color: #333;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
+
+.wrapper .login{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    border-radius: 45px;
+    box-shadow: 0,0,10px rgba(255,255,255,0.2);
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.login:hover{
+    background: #121212;
+}
+
+.sign-up{
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    margin-right: 10px;
+}
+.sign-up a{
+    color: #333;
+    text-decoration: none;
+    margin-left: 3px;
+    transition:  0.5s ease;
+}
+
+.sign-up a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+}
